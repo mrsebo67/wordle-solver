@@ -137,13 +137,14 @@ for i in range(len(listPossibleTries)):
 listPossibleTries.extend(listPossibleAnswers)
 oldWords = listPossibleTries
 
-i = 0;
+i = 0
 while i < 6:
     word = input('word: ')
     guessedSpot = input('guessedSpot: ')
     guessedLetter = input('guessedLetter: ')
     listWords = getInformation(word, guessedSpot, guessedLetter, oldWords)
     if(len(listWords)==1):
+        print(listWords)
         print('you Won, gratz')
         break
     print(getBestWord(word, listWords))
