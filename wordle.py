@@ -135,7 +135,7 @@ for i in range(len(listPossibleTries)):
 #getInformationOfWord('crane')
 
 listPossibleTries.extend(listPossibleAnswers)
-oldWords = listPossibleTries
+oldWords = listPossibleAnswers
 
 i = 0
 while i < 6:
